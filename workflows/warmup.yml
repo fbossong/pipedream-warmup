@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Stuur ping naar Pipedream
-        run: curl -s -o /dev/null "https://eolyu7w9jqkmzr7.m.pipedream.net?ping=1"
+        run: curl -s -o /dev/null ""${{ secrets.PING_URL }}"?ping=1"
