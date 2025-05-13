@@ -1,0 +1,13 @@
+name: Warm Pipedream
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"  # elke 5 minuten
+  workflow_dispatch:       # handmatig starten via GitHub UI
+
+jobs:
+  ping-pipedream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stuur ping naar Pipedream
+        run: curl -s -o /dev/null "https://eolyu7w9jqkmzr7.m.pipedream.net?ping=1"
