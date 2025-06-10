@@ -9,5 +9,5 @@ jobs:
   ping-pipedream:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping Pipedream
+      - name: Ping Pipedream Reactivate
         run: curl -s -o /dev/null "${{ secrets.PING_REACTIVATE_URL }}"
