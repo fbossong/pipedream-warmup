@@ -6,7 +6,7 @@ on:
   workflow_dispatch:         # handmatig starten
 
 jobs:
-  ping-pipedream:
+  ping-pipedream-reactivate:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Pipedream Reactivate
